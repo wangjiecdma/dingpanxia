@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="iphoneserver:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="iphoneserver/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="iphoneserver" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="com.alibaba.nls:nls-sdk-tts:2.0.3" />
+          <element id="library" level="project" name="com.aliyun:aliyun-java-sdk-core:3.5.0" />
+          <element id="library" level="project" name="io.github.tigerbrokers:openapi-java-sdk:1.0.2" />
+          <element id="library" level="project" name="org.eclipse.paho.client.mqttv3-1.2.0" />
+          <element id="library" level="project" name="org.thymeleaf:thymeleaf:Release" />
+          <element id="library" level="project" name="com.google.guava:guava:18.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
