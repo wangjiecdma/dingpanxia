@@ -8,6 +8,37 @@
   <component name="ChangeListManager">
     <list default="true" id="b5e66569-2dd3-401f-93c6-c3cbb6856f54" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/com/www/iphone/sevlet/ServletMakeCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/com/www/iphone/sevlet/ServletMakeCall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/inbound/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/inbound/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/inbound/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/inbound/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/inbound/InboundClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/inbound/InboundClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/internal/AbstractEslClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/internal/AbstractEslClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/outbound/OutboundClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/outbound/OutboundClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/HeaderParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/HeaderParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/event/EslEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/event/EslEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/message/EslFrameDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/message/EslFrameDecoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/message/EslHeaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/message/EslHeaders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/message/EslMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/org/freeswitch/esl/client/transport/message/EslMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/tools/FSHelp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/tools/FSHelp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/tools/FSHelp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/tools/FSHelp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/tools/TTSHelp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/tools/TTSHelp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/tools/TigerHelp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/iphoneserver_war_exploded/WEB-INF/classes/tools/TigerHelp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/com/www/iphone/sevlet/ServletMakeCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/com/www/iphone/sevlet/ServletMakeCall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/inbound/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/inbound/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/inbound/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/inbound/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/inbound/InboundClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/inbound/InboundClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/internal/AbstractEslClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/internal/AbstractEslClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/outbound/OutboundClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/outbound/OutboundClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/HeaderParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/HeaderParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/event/EslEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/event/EslEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/message/EslFrameDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/message/EslFrameDecoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/message/EslHeaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/message/EslHeaders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/message/EslMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/org/freeswitch/esl/client/transport/message/EslMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/tools/FSHelp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/tools/FSHelp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/tools/FSHelp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/tools/FSHelp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/tools/TTSHelp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/tools/TTSHelp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/tools/TigerHelp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/tools/TigerHelp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/FSHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/FSHelp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tools/TigerHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/TigerHelp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,7 +54,7 @@
       <file leaf-file-name="EslMessage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/freeswitch/esl/client/transport/message/EslMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2825">
+            <state relative-caret-position="1695">
               <caret line="150" selection-start-line="150" selection-end-line="150" />
             </state>
           </provider>
@@ -32,8 +63,8 @@
       <file leaf-file-name="TTSHelp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/TTSHelp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1325">
-              <caret line="64" column="44" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="44" />
+            <state relative-caret-position="15">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,8 +75,8 @@
       <file leaf-file-name="FSHelp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/FSHelp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="390">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,7 +87,7 @@
       <file leaf-file-name="ServletMakeCall.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/www/iphone/sevlet/ServletMakeCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="315">
               <caret line="35" column="53" selection-start-line="32" selection-start-column="12" selection-end-line="40" selection-end-column="81" />
             </state>
           </provider>
@@ -65,53 +96,30 @@
       <file leaf-file-name="TigerHelp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tools/TigerHelp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+            <state relative-caret-position="363">
+              <caret line="228" column="70" lean-forward="true" selection-start-line="228" selection-start-column="70" selection-end-line="228" selection-end-column="70" />
+              <folding>
+                <element signature="e#6612#6613#0" expanded="true" />
+                <element signature="e#6642#6643#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TigerHttpClient.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/github/tigerbrokers/openapi-java-sdk/1.0.2/openapi-java-sdk-1.0.2.jar!/com/tigerbrokers/stock/openapi/client/https/client/TigerHttpClient.class">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="300">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateTimeFormatter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/format/DateTimeFormatter.java">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44475">
-              <caret line="1889" column="21" selection-start-line="1889" selection-start-column="21" selection-end-line="1889" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TemporalAccessor.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/temporal/TemporalAccessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateFormat.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/DateFormat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22550">
-              <caret line="902" column="21" selection-start-line="902" selection-start-column="21" selection-end-line="902" selection-end-column="21" />
+            <state relative-caret-position="210">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -167,18 +175,17 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="640" />
-    <option name="width" value="640" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="61" />
+    <option name="y" value="23" />
+    <option name="width" value="1379" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,11 +210,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dingpanxia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dingpanxia" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dingpanxia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dingpanxia" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,49 +407,51 @@
       <workItem from="1544685224345" duration="726000" />
       <workItem from="1544686951152" duration="866000" />
       <workItem from="1544765960339" duration="6085000" />
+      <workItem from="1544791204749" duration="1424000" />
+      <workItem from="1544797770062" duration="2293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23301000" />
+    <option name="totallyTimeSpent" value="27018000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="61" y="23" width="1379" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.36914894" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.36861768" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16914894" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34371108" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82074267" visible="true" weight="0.20572917" />
-      <window_info id="Web" order="7" sideWeight="0.17925736" side_tool="true" visible="true" weight="0.20572917" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7343454" visible="true" weight="0.20522118" />
+      <window_info id="Web" order="7" sideWeight="0.26565465" side_tool="true" visible="true" weight="0.20522118" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,44 +465,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/tools/TigerHelp.java</url>
-          <line>172</line>
+          <line>210</line>
           <properties method="run">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tools/TigerHelp.java</url>
-          <line>213</line>
-          <properties />
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/temporal/TemporalAccessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3775">
-          <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20750">
-          <caret line="902" column="21" selection-start-line="902" selection-start-column="21" selection-end-line="902" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/temporal/TemporalAccessor.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/DateFormat.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java" />
     <entry file="file://$PROJECT_DIR$/src/tools/TigerHelp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
@@ -526,34 +524,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/format/DateTimeFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47225">
-          <caret line="1889" column="21" selection-start-line="1889" selection-start-column="21" selection-end-line="1889" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/temporal/TemporalAccessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20750">
-          <caret line="902" column="21" selection-start-line="902" selection-start-column="21" selection-end-line="902" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/format/DateTimeFormatter.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/temporal/TemporalAccessor.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/DateFormat.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java" />
     <entry file="file://$PROJECT_DIR$/src/tools/TTSHelp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -660,9 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/nls/nls-sdk-tts/2.0.3/nls-sdk-tts-2.0.3.jar!/com/alibaba/nls/client/protocol/tts/SpeechSynthesizerListener.class" />
     <entry file="file://$PROJECT_DIR$/src/org/freeswitch/esl/client/transport/message/EslFrameDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -707,13 +678,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/nio/ch/SocketChannelImpl.class" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/freeswitch/esl/client/dptools/Execute.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -723,7 +687,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/freeswitch/esl/client/transport/message/EslMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2825">
+        <state relative-caret-position="1695">
           <caret line="150" selection-start-line="150" selection-end-line="150" />
         </state>
       </provider>
@@ -756,45 +720,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22550">
-          <caret line="902" column="21" selection-start-line="902" selection-start-column="21" selection-end-line="902" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/format/DateTimeFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44475">
-          <caret line="1889" column="21" selection-start-line="1889" selection-start-column="21" selection-end-line="1889" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/temporal/TemporalAccessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/DateFormat.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/format/DateTimeFormatter.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/temporal/TemporalAccessor.java" />
     <entry file="file://$PROJECT_DIR$/src/com/www/iphone/sevlet/ServletMakeCall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="315">
           <caret line="35" column="53" selection-start-line="32" selection-start-column="12" selection-end-line="40" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/github/tigerbrokers/openapi-java-sdk/1.0.2/openapi-java-sdk-1.0.2.jar!/com/tigerbrokers/stock/openapi/client/https/client/TigerHttpClient.class" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/FSHelp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="390">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -803,25 +758,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/TTSHelp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="44" />
+        <state relative-caret-position="15">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/tigerbrokers/openapi-java-sdk/1.0.2/openapi-java-sdk-1.0.2.jar!/com/tigerbrokers/stock/openapi/client/https/client/TigerHttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/TigerHelp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+        <state relative-caret-position="363">
+          <caret line="228" column="70" lean-forward="true" selection-start-line="228" selection-start-column="70" selection-end-line="228" selection-end-column="70" />
+          <folding>
+            <element signature="e#6612#6613#0" expanded="true" />
+            <element signature="e#6642#6643#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -886,6 +838,18 @@
               <list>
                 <option value="0.45057473" />
                 <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

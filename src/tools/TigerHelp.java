@@ -65,9 +65,8 @@ public class TigerHelp {
                 .symbol(symbol)
                 .market(Market.US)
                 .period(KType.min5)
-                .beginTime(date)
-                .endTime("2019-12-13")
                 .right("br")
+                .limit(5)
                 .buildJson();
 
         request.setBizContent(bizContent);
@@ -103,20 +102,60 @@ public class TigerHelp {
         JSONArray array =  jsonObject.getJSONArray("items");
         float total = 0;
         float lastPrice=0,currentPrice=0;
-        for (int i =1;i<array.size()-1;i++){
+        for (int i =1;i<array.size();i++){
             lastPrice  = array.getJSONObject(i-1).getFloat("close");
             currentPrice = array.getJSONObject(i).getFloatValue("close");
             int  volume = array.getJSONObject(i).getIntValue("volume");
             total +=  Math.abs(currentPrice - lastPrice)*volume;
 
         }
-        float agv = total/ (array.size() -2);
+        float avg = total/ (array.size() -1);
 
-        float current =Math.abs( array.getJSONObject(array.size()-1).getFloatValue("close") - currentPrice);
-        current *= array.getJSONObject(array.size()-1).getIntValue("volume");
-        long time = array.getJSONObject(array.size()-1).getLongValue("time");
 
-        return current/agv;
+        return getCurrentMomentum(symbol)/avg;
+    }
+    public float getCurrentMomentum(String symbol){
+
+        try {
+            Thread.sleep(10 * 1000);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        TigerHttpRequest request = new TigerHttpRequest(ApiServiceType.STOCK_DETAIL);
+
+
+        String bizContent = QuoteParamBuilder.instance()
+                .symbol(symbol)
+                .market(Market.US)
+                .buildJson();
+
+        request.setBizContent(bizContent);
+        TigerHttpResponse response = client.execute(request);
+
+        JSONObject jsonObject  = JSON.parseObject(response.getData());
+        System.out.println(response.getData());
+        JSONArray array =  jsonObject.getJSONObject("data").getJSONArray("items");
+        JSONObject item = array.getJSONObject(0);
+
+        float volume = Math.abs( item.getFloatValue("latestPrice") - item.getFloatValue("preClose"))*
+                item.getIntValue("volume");
+        long time = item.getLongValue("timestamp");
+        Date date = new Date(time);
+
+        int hour = date.getHours();
+        int min = date.getMinutes();
+        int sec = date.getSeconds();
+
+        if (hour>=22){
+            hour -= 22;
+        }else{
+            hour += 2;
+        }
+        int timelen = hour*3600+min*60 +sec - 30*60;
+
+        volume = volume *3600*6+30*60/timelen;
+
+        return volume;
 
     }
 
@@ -130,9 +169,8 @@ public class TigerHelp {
                 .symbol(symbol)
                 .market(Market.US)
                 .period(KType.min15)
-                .beginTime(date)
-                .endTime("2019-12-13")
                 .right("br")
+                .limit(10)
                 .buildJson();
 
         request.setBizContent(bizContent);
@@ -176,19 +214,19 @@ public class TigerHelp {
             System.out.println("start time :"+startTime(0));
             System.out.println("start time :"+startTime(1));
 
-            String date  = startTime(1);
+            String date  = startTime(0);
 
 
             String result =  getKline10Day("AAPL");
             System.out.println("10 day :"+result);
 
-            System.out.println("AAPL 动能 :"+getMomentumValue("AAPL"));
-            System.out.println("QQQ 动能 :"+getMomentumValue("QQQ"));
-            System.out.println("亚马逊 动能 :"+getMomentumValue("AMZN"));
-            System.out.println("JD 动能 :"+getMomentumValue("JD"));
-            System.out.println("AMD 动能 :"+getMomentumValue("AMD"));
-            System.out.println("镁光 动能 :"+getMomentumValue("MU"));
-            System.out.println("特斯拉 动能 :"+getMomentumValue("TLSA"));
+//            System.out.println("AAPL 动能 :"+getMomentumValue("AAPL"));
+//            System.out.println("QQQ 动能 :"+getMomentumValue("QQQ"));
+//            System.out.println("亚马逊 动能 :"+getMomentumValue("AMZN"));
+//            System.out.println("JD 动能 :"+getMomentumValue("JD"));
+//            System.out.println("AMD 动能 :"+getMomentumValue("AMD"));
+//            System.out.println("镁光 动能 :"+getMomentumValue("MU"));
+//            System.out.println("特斯拉 动能 :"+getMomentumValue("TLSA"));
 
             while (true) {
 
@@ -211,8 +249,9 @@ public class TigerHelp {
 
                 for (int index = 0; index < mList.length; index++) {
                     SymbolConfig config = mList[index];
-                    System.out.println("check symble :"+config.name);
                     String test = getKLineData_5(config.symbol, date);
+                    System.out.println("check symble :"+config.name+" data:"+test);
+
                     JSONObject jsonObject = JSON.parseObject(test);
                     if (jsonObject.containsKey("items")) {
                         JSONArray items = jsonObject.getJSONArray("items");
@@ -320,16 +359,16 @@ public class TigerHelp {
 
 
     public void alertCall(String alert ){
-//        String number =  "1006";
-//        String text = alert+", , , , , , , , , "+alert+", , , , , , , , , 谢谢您您。";
-//        System.out.println(" maek call number :"+number +"  text :"+text);
-//        java.text.DateFormat format1 = new java.text.SimpleDateFormat("yyyy_MM_dd_hh_mm_ss");
-//        String fileName = "tts_" +format1.format(new Date())+".wav";
-//        File f = new File(fileName);
-//        String filePath =  f.getAbsolutePath();
-//
-//        boolean result = TTSHelp.getInstance().getWavFromText(text,filePath);
-//        FSHelp.getInstance().autoCall(number,filePath);
+        String number =  "1006";
+        String text = alert+", , , , , , , , , "+alert+", , , , , , , , , 谢谢您您。";
+        System.out.println(" maek call number :"+number +"  text :"+text);
+        java.text.DateFormat format1 = new java.text.SimpleDateFormat("yyyy_MM_dd_hh_mm_ss");
+        String fileName = "tts_" +format1.format(new Date())+".wav";
+        File f = new File(fileName);
+        String filePath =  f.getAbsolutePath();
+
+        boolean result = TTSHelp.getInstance().getWavFromText(text,filePath);
+        FSHelp.getInstance().autoCall(number,filePath);
 
     }
 
