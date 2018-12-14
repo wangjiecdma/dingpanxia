@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5e66569-2dd3-401f-93c6-c3cbb6856f54" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/tools/TTSHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/TTSHelp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tools/TigerHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/TigerHelp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,8 +64,8 @@
       <file leaf-file-name="TigerHelp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tools/TigerHelp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="270" lean-forward="true" selection-start-line="270" selection-end-line="270" />
+            <state relative-caret-position="330">
+              <caret line="207" column="10" lean-forward="true" selection-start-line="207" selection-start-column="10" selection-end-line="207" selection-end-column="10" />
               <folding>
                 <element signature="e#6612#6613#0" expanded="true" />
                 <element signature="e#6642#6643#0" expanded="true" />
@@ -377,12 +376,12 @@
       <workItem from="1544686951152" duration="866000" />
       <workItem from="1544765960339" duration="6085000" />
       <workItem from="1544791204749" duration="1424000" />
-      <workItem from="1544797770062" duration="3418000" />
+      <workItem from="1544797770062" duration="3789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28143000" />
+    <option name="totallyTimeSpent" value="28514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="23" width="1379" height="877" extended-state="0" />
@@ -399,11 +398,11 @@
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3860523" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3860523" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.73427993" visible="true" weight="0.20522118" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73427993" visible="true" weight="0.20522118" />
       <window_info id="Web" order="7" sideWeight="0.26572007" side_tool="true" visible="true" weight="0.20522118" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -737,8 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/TigerHelp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="270" lean-forward="true" selection-start-line="270" selection-end-line="270" />
+        <state relative-caret-position="330">
+          <caret line="207" column="10" lean-forward="true" selection-start-line="207" selection-start-column="10" selection-end-line="207" selection-end-column="10" />
           <folding>
             <element signature="e#6612#6613#0" expanded="true" />
             <element signature="e#6642#6643#0" expanded="true" />

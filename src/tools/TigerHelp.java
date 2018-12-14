@@ -201,9 +201,9 @@ public class TigerHelp {
     Thread thread = new Thread(){
 
         private SymbolConfig  mList[] = new SymbolConfig[]{
-                new SymbolConfig("QQQ",0.48f,0.48f,"纳指"),
-                new SymbolConfig("AAPL",0.48f,0.48f,"苹果"),
-                new SymbolConfig("AMZN",0.48f,0.48f,"亚马逊"),
+                new SymbolConfig("QQQ",0.48f,0.99f,"纳指"),
+                new SymbolConfig("AAPL",0.48f,0.99f,"苹果"),
+                new SymbolConfig("AMZN",0.48f,0.99f,"亚马逊"),
 
         };
 
