@@ -12,6 +12,7 @@ import com.tigerbrokers.stock.openapi.client.util.builder.QuoteParamBuilder;
 import jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator;
 
 import java.io.File;
+import java.sql.Time;
 import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -75,6 +76,51 @@ public class TigerHelp {
         return response.getData();
     }
 
+    public String getKline10Day(String symbol){
+        TigerHttpRequest request = new TigerHttpRequest(ApiServiceType.KLINE);
+
+        String time = startTime(22);
+
+
+        String bizContent = QuoteParamBuilder.instance()
+                .symbol(symbol)
+                .market(Market.US)
+                .period(KType.day)
+                .endTime("2019-12-13")
+                .right("br")
+                .limit(11)
+                .buildJson();
+
+        request.setBizContent(bizContent);
+        TigerHttpResponse response = client.execute(request);
+
+        return response.getData();
+    }
+
+    public float getMomentumValue(String symbol){
+        String result = getKline10Day(symbol);
+        JSONObject jsonObject =  JSON.parseObject(result);
+        JSONArray array =  jsonObject.getJSONArray("items");
+        float total = 0;
+        float lastPrice=0,currentPrice=0;
+        for (int i =1;i<array.size()-1;i++){
+            lastPrice  = array.getJSONObject(i-1).getFloat("close");
+            currentPrice = array.getJSONObject(i).getFloatValue("close");
+            int  volume = array.getJSONObject(i).getIntValue("volume");
+            total +=  Math.abs(currentPrice - lastPrice)*volume;
+
+        }
+        float agv = total/ (array.size() -2);
+
+        float current =Math.abs( array.getJSONObject(array.size()-1).getFloatValue("close") - currentPrice);
+        current *= array.getJSONObject(array.size()-1).getIntValue("volume");
+        long time = array.getJSONObject(array.size()-1).getLongValue("time");
+
+        return current/agv;
+
+    }
+
+
 
     public String getKLineData_15(String symbol,String date){
         TigerHttpRequest request = new TigerHttpRequest(ApiServiceType.KLINE);
@@ -96,6 +142,18 @@ public class TigerHelp {
     }
 
 
+    public String startTime(int beforDays){
+        Date date = new Date();
+        if (date.getHours() <5){
+            beforDays +=1;
+        }
+        long time = date.getTime() - beforDays*24*60*60*1000;
+        date = new Date(time);
+        String value = String.format("%d-%02d-%02d 22:00:00",date.getYear()+1900,date.getMonth()+1,date.getDate());
+
+        return value;
+    }
+
 
     public void start(){
         thread.start();
@@ -107,43 +165,73 @@ public class TigerHelp {
         private SymbolConfig  mList[] = new SymbolConfig[]{
                 new SymbolConfig("QQQ",0.48f,0.48f,"纳指"),
                 new SymbolConfig("AAPL",0.48f,0.48f,"苹果"),
-                new SymbolConfig("AMZN",0.48f,0.48f,"亚马逊"),
-                new SymbolConfig("MSFT",0.48f,0.48f,"微软"),
-                new SymbolConfig("NFLX",0.48f,0.48f,"奈非"),
-                new SymbolConfig("NVDA",0.48f,0.48f,"英伟达"),
-                new SymbolConfig("TSLA",0.48f,0.48f,"特斯拉"),
-                new SymbolConfig("BABA",0.48f,0.48f,"阿里巴巴"),
-                new SymbolConfig("ADBE",0.48f,0.48f,"饿到北"),
-                new SymbolConfig("JPM",0.48f,0.48f,"摩根大通"),
-                new SymbolConfig("C",0.48f,0.48f,"花旗"),
-                new SymbolConfig("BAC",0.48f,0.48f,"美国银行"),
-                new SymbolConfig("MS",0.48f,0.48f,"摩根史丹利"),
-                new SymbolConfig("MU",0.48f,0.48f,"镁光科技"),
-                new SymbolConfig("INTC",0.48f,0.48f,"英特尔"),
-
+                new SymbolConfig("AMZN",0.48f,0.48f,"亚马逊")
         };
 
 
         @Override
         public void run() {
-            DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-            String date =  df.format(LocalDateTime.now());
+
+
+            System.out.println("start time :"+startTime(0));
+            System.out.println("start time :"+startTime(1));
+
+            String date  = startTime(1);
+
+
+            String result =  getKline10Day("AAPL");
+            System.out.println("10 day :"+result);
+
+            System.out.println("AAPL 动能 :"+getMomentumValue("AAPL"));
+            System.out.println("QQQ 动能 :"+getMomentumValue("QQQ"));
+            System.out.println("亚马逊 动能 :"+getMomentumValue("AMZN"));
+            System.out.println("JD 动能 :"+getMomentumValue("JD"));
+            System.out.println("AMD 动能 :"+getMomentumValue("AMD"));
+            System.out.println("镁光 动能 :"+getMomentumValue("MU"));
+            System.out.println("特斯拉 动能 :"+getMomentumValue("TLSA"));
 
             while (true) {
+
+                Date time = new Date();
+                System.out.println("current  time :"+ time );
+
+                int min = time.getMinutes()%5;
+                int sec = time.getSeconds();
+
+                int wait = (60 - sec +10) + (4-min)*60;
+                try{
+                    Thread.sleep(wait*1000);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+
+
+                System.out.println("now is a chance to get data :"+new Date());
+
 
                 for (int index = 0; index < mList.length; index++) {
                     SymbolConfig config = mList[index];
                     System.out.println("check symble :"+config.name);
-
-                    String result = getKLineData_5(config.symbol, date);
-                    JSONObject jsonObject = JSON.parseObject(result);
+                    String test = getKLineData_5(config.symbol, date);
+                    JSONObject jsonObject = JSON.parseObject(test);
                     if (jsonObject.containsKey("items")) {
                         JSONArray items = jsonObject.getJSONArray("items");
                         System.out.println("result size  :" + items.size());
+                        if (items.size()<6){
+                            //开盘半小时不做任何提醒
+                            break;
+                        }
+                        //五分钟只做突然的暴涨暴跌检测 //检车倒数第二个数据为完整的五分钟数据
+                        PriceItem price = PriceItem.from(items.getJSONObject(items.size() - 2));
+                        System.out.println("五分钟 cehck price :"+price.close);
 
-                        //五分钟只做突然的暴涨暴跌检测
-                        PriceItem price = PriceItem.from(items.getJSONObject(items.size() - 1));
-                        System.out.println("cehck price :"+price);
+                        for (int j =0;j<items.size() ;j++){
+                            PriceItem  pp = PriceItem.from(items.getJSONObject(j));
+                            Date priceTime =  new Date(pp.time);
+                            System.out.println(" price time :"+priceTime.toString());
+                        }
+
+
                         if (Math.abs(price.persent) >= config.over_line_5) {
                             //触发报警
                             String value = floatString(Math.abs( price.persent));//
@@ -200,7 +288,7 @@ public class TigerHelp {
                     }
 
                     try {
-                        Thread.sleep(5 * 1000);
+                        Thread.sleep(30 * 1000);
                     }catch (Exception e){
                         e.printStackTrace();
                     }
@@ -232,16 +320,16 @@ public class TigerHelp {
 
 
     public void alertCall(String alert ){
-        String number =  "1006";
-        String text = alert+", , , , , , , , , "+alert+", , , , , , , , , 谢谢您您。";
-        System.out.println(" maek call number :"+number +"  text :"+text);
-        java.text.DateFormat format1 = new java.text.SimpleDateFormat("yyyy_MM_dd_hh_mm_ss");
-        String fileName = "tts_" +format1.format(new Date())+".wav";
-        File f = new File(fileName);
-        String filePath =  f.getAbsolutePath();
-
-        boolean result = TTSHelp.getInstance().getWavFromText(text,filePath);
-        FSHelp.getInstance().autoCall(number,filePath);
+//        String number =  "1006";
+//        String text = alert+", , , , , , , , , "+alert+", , , , , , , , , 谢谢您您。";
+//        System.out.println(" maek call number :"+number +"  text :"+text);
+//        java.text.DateFormat format1 = new java.text.SimpleDateFormat("yyyy_MM_dd_hh_mm_ss");
+//        String fileName = "tts_" +format1.format(new Date())+".wav";
+//        File f = new File(fileName);
+//        String filePath =  f.getAbsolutePath();
+//
+//        boolean result = TTSHelp.getInstance().getWavFromText(text,filePath);
+//        FSHelp.getInstance().autoCall(number,filePath);
 
     }
 

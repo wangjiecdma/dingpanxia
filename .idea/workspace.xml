@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b5e66569-2dd3-401f-93c6-c3cbb6856f54" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/iphoneserver/tools/TigerHelp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iphoneserver/tools/TigerHelp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tools/TigerHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/TigerHelp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,7 +32,7 @@
       <file leaf-file-name="TTSHelp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/TTSHelp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-199">
+            <state relative-caret-position="1325">
               <caret line="64" column="44" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -66,8 +65,8 @@
       <file leaf-file-name="TigerHelp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tools/TigerHelp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="556">
+              <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
             </state>
           </provider>
         </entry>
@@ -75,7 +74,7 @@
       <file leaf-file-name="TigerHttpClient.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/io/github/tigerbrokers/openapi-java-sdk/1.0.2/openapi-java-sdk-1.0.2.jar!/com/tigerbrokers/stock/openapi/client/https/client/TigerHttpClient.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
+            <state relative-caret-position="975">
               <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
@@ -111,7 +110,7 @@
       <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20750">
+            <state relative-caret-position="22550">
               <caret line="902" column="21" selection-start-line="902" selection-start-column="21" selection-end-line="902" selection-end-column="21" />
             </state>
           </provider>
@@ -135,6 +134,7 @@
       <find>getAbsolutePath</find>
       <find>TigerHelp</find>
       <find>TTSHelp</find>
+      <find>getTimeline</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -206,7 +207,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -385,14 +385,17 @@
       <workItem from="1544590676732" duration="1214000" />
       <workItem from="1544679005845" duration="5897000" />
       <workItem from="1544685224345" duration="726000" />
+      <workItem from="1544686951152" duration="866000" />
+      <workItem from="1544765960339" duration="6085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16350000" />
+    <option name="totallyTimeSpent" value="23301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -413,10 +416,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6585106" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16914894" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82340425" visible="true" weight="0.20572917" />
-      <window_info id="Web" order="7" sideWeight="0.17659575" side_tool="true" visible="true" weight="0.20572917" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82074267" visible="true" weight="0.20572917" />
+      <window_info id="Web" order="7" sideWeight="0.17925736" side_tool="true" visible="true" weight="0.20572917" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -426,7 +430,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +443,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/tools/TigerHelp.java</url>
-          <line>127</line>
+          <line>172</line>
           <properties method="run">
             <option name="EMULATED" value="true" />
           </properties>
@@ -448,7 +451,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tools/TigerHelp.java</url>
-          <line>135</line>
+          <line>213</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -457,6 +460,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/temporal/TemporalAccessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3775">
+          <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20750">
+          <caret line="902" column="21" selection-start-line="902" selection-start-column="21" selection-end-line="902" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/TigerHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/freeswitch/esl/client/dptools/Execute.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -727,7 +758,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20750">
+        <state relative-caret-position="22550">
           <caret line="902" column="21" selection-start-line="902" selection-start-column="21" selection-end-line="902" selection-end-column="21" />
         </state>
       </provider>
@@ -772,7 +803,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/TTSHelp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
+        <state relative-caret-position="1325">
           <caret line="64" column="44" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -782,15 +813,15 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/github/tigerbrokers/openapi-java-sdk/1.0.2/openapi-java-sdk-1.0.2.jar!/com/tigerbrokers/stock/openapi/client/https/client/TigerHttpClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
+        <state relative-caret-position="975">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/TigerHelp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="556">
+          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
         </state>
       </provider>
     </entry>
