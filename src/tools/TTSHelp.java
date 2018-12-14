@@ -75,7 +75,7 @@ public class TTSHelp {
                     try {
                         byte[] bytesArray = new byte[message.remaining()];
                         message.get(bytesArray, 0, bytesArray.length);
-                        System.out.println("write array:" + bytesArray.length);
+                        //System.out.println("write array:" + bytesArray.length);
                         fout.write(bytesArray);
                     } catch (IOException e) {
                         e.printStackTrace();

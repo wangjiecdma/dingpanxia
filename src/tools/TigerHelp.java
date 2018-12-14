@@ -203,7 +203,8 @@ public class TigerHelp {
         private SymbolConfig  mList[] = new SymbolConfig[]{
                 new SymbolConfig("QQQ",0.48f,0.48f,"纳指"),
                 new SymbolConfig("AAPL",0.48f,0.48f,"苹果"),
-                new SymbolConfig("AMZN",0.48f,0.48f,"亚马逊")
+                new SymbolConfig("AMZN",0.48f,0.48f,"亚马逊"),
+
         };
 
 
@@ -264,11 +265,9 @@ public class TigerHelp {
                         PriceItem price = PriceItem.from(items.getJSONObject(items.size() - 2));
                         System.out.println("五分钟 cehck price :"+price.close);
 
-                        for (int j =0;j<items.size() ;j++){
-                            PriceItem  pp = PriceItem.from(items.getJSONObject(j));
+                            PriceItem  pp = PriceItem.from(items.getJSONObject(items.size()-1));
                             Date priceTime =  new Date(pp.time);
                             System.out.println(" price time :"+priceTime.toString());
-                        }
 
 
                         if (Math.abs(price.persent) >= config.over_line_5) {
@@ -309,7 +308,7 @@ public class TigerHelp {
                             }
                             System.out.println("cehck 15  :"+flag+ "   , "+total);
 
-                            if (((flag == 3) || (flag == -3)) && (total > config.over_line_15)) {
+                            if (((flag == 3) || (flag == -3)) && (Math.abs(total) > config.over_line_15)) {
                                 //三次检测方向一致，并且三次幅度相加超过设置的观测值。
 
                                 String value = floatString(Math.abs(total));
